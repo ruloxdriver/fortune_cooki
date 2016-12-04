@@ -7,12 +7,12 @@ module.exports = {
     "getFortune" : function(cb){
         // --En este proceso se conecta a localhost con mi puerto declarado anteriomente--
         // --("ip+puerto+el nombre de mi base de datos")
-        mongoClient.connect("mongodb://127.0.0.1:27017/fortuneapp",
+        mongoClient.connect('mongodb://ruloxdriver:ruloxdriver@ds119598.mlab.com:19598/fortuneapp',
         function(err, db){
             if(err){
                 console.log(">Error al intentar conectarme" +
                 " a la base de datos:"+
-                " mongodb://127.0.0.1:27017/fortuneapp");
+                'mongodb://ruloxdriver:ruloxdriver@ds119598.mlab.com:19598/fortuneapp');
                 var fortunePaper = {
                     "mensaje1":
                     "La sabiduria te da porder y el poder me da la libertad."
